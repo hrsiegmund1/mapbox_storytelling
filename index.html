@@ -1,126 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
-    <title>Agency Mapped</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://cdn.jsdelivr.net/npm/mapbox-gl-globe-minimap@1.2.0/dist/bundle.js"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
+<script>
+    var initLoad = true;
+    var layerTypes = {
+        'fill': ['fill-opacity'],
+        'line': ['line-opacity'],
+        'circle': ['circle-opacity', 'circle-stroke-opacity'],
+        'symbol': ['icon-opacity', 'text-opacity'],
+        'raster': ['raster-opacity'],
+        'fill-extrusion': ['fill-extrusion-opacity'],
+        'heatmap': ['heatmap-opacity']
+    };
 
-        a,
-        a:hover,
-        a:visited {
-            color: #0071bc;
-        }
+    var alignments = {
+        'left': 'lefty',
+        'center': 'centered',
+        'right': 'righty',
+        'full': 'fully'
+    };
 
-        #map {
-            top: 0;
-            height: 100vh;
-            width: 100vw;
-            position: fixed;
-        }
+    function getLayerPaintType(layer) {
+        var layerType = map.getLayer(layer).type;
+        return layerTypes[layerType];
+    }
 
-        #header {
-            margin: auto;
-            width: 100%;
-            position: relative;
-            z-index: 5;
-        }
+    function setLayerOpacity(layer) {
+        var paintProps = getLayerPaintType(layer.layer);
+        paintProps.forEach(function (prop) {
+            var options = {};
+            if (layer.duration) {
+                var transitionProp = prop + "-transition";
+                options = { "duration": layer.duration };
+                map.setPaintProperty(layer.layer, transitionProp, options);
+            }
+            map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+        });
+    }
 
-        #header h1,
-        #header h2,
-        #header p {
-            margin: 0;
-            padding: 2vh 2vw;
-            text-align: center;
-        }
+    var story = document.getElementById('story');
+    var features = document.createElement('div');
+    features.setAttribute('id', 'features');
 
-        #footer {
-            width: 100%;
-            min-height: 5vh;
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            text-align: center;
-            line-height: 25px;
-            font-size: 13px;
-            position: relative;
-            z-index: 5;
-        }
+    var header = document.createElement('div');
 
-        #features {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
-        }
+    if (config.title) {
+        var titleText = document.createElement('h1');
+        titleText.innerText = config.title;
+        header.appendChild(titleText);
+    }
 
-        .hidden {
-            visibility: hidden;
-        }
+    if (config.subtitle) {
+        var subtitleText = document.createElement('h2');
+        subtitleText.innerText = config.subtitle;
+        header.appendChild(subtitleText);
+    }
 
-        .centered {
-            width: 50vw;
-            margin: 0 auto;
-        }
-
-        .lefty {
-            width: 33vw;
-            margin-left: 5vw;
-        }
-
-        .righty {
-            width: 33vw;
-            margin-left: 62vw;
-        }
-
-        .fully {
-            width: 100%;
-            margin: auto;
-        }
-
-        .light {
-            color: #444;
-            background-color: #fafafa;
-        }
-
-        .dark {
-            color: #fafafa;
-            background-color: #444;
-        }
-
-        .step {
-            padding-bottom: 50vh;
-            opacity: 0.25;
-        }
-
-        .step.active {
-            opacity: 0.9;
-        }
-
-        .step div {
-            padding: 25px 50px;
-            line-height: 25px;
-            font-size: 13px;
-        }
-
-        .step img {
-            width: 100%;
-            height: auto;
-            max-height: 60vh;
-            object-fit: contain;
-            display: block;
-            margin: 0 auto;
-        }
-
-        #legend {
-            position: fixed;
-            bottom: 30px;
-            left: 10px;
-            background-color: rgba(255, 255, 255
+    if (config.byline) {
+        var bylineText = document.createElement('p');
+        bylineText.innerText = config.byline;
+        header.appendChild(bylineText);

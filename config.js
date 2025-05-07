@@ -16,7 +16,7 @@ var config = {
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
     title: 'Agency Mapped: Southern Women in Literature',
-    subtitle: 'Spatial Journeys across the South 2',
+    subtitle: 'By using spatial movement and economic data across across The Color Purple, Their Eyes Were Watching God, and Salvage the Bones, by gender, greater themes of how Southern women assert agency.',
     byline: 'Hannah Siegmund',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [

@@ -1,97 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8' />
-  <title>Agency Mapped</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/mapbox-gl-globe-minimap@1.2.0/dist/bundle.js"></script>
-  <script src="https://unpkg.com/scrollama"></script>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
+<script>
+    var initLoad = true;
+    var layerTypes = {
+        'fill': ['fill-opacity'],
+        'line': ['line-opacity'],
+        'circle': ['circle-opacity', 'circle-stroke-opacity'],
+        'symbol': ['icon-opacity', 'text-opacity'],
+        'raster': ['raster-opacity'],
+        'fill-extrusion': ['fill-extrusion-opacity'],
+        'heatmap': ['heatmap-opacity']
+    };
+
+    var alignments = {
+        'left': 'lefty',
+        'center': 'centered',
+        'right': 'righty',
+        'full': 'fully'
+    };
+
+    function getLayerPaintType(layer) {
+        var layerType = map.getLayer(layer).type;
+        return layerTypes[layerType];
     }
-    #map {
-      top: 0;
-      height: 100vh;
-      width: 100vw;
-      position: fixed;
+
+    function setLayerOpacity(layer) {
+        var paintProps = getLayerPaintType(layer.layer);
+        paintProps.forEach(function (prop) {
+            var options = {};
+            if (layer.duration) {
+                var transitionProp = prop + "-transition";
+                options = { "duration": layer.duration };
+                map.setPaintProperty(layer.layer, transitionProp, options);
+            }
+            map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+        });
     }
-    #story {
-      position: relative;
-      z-index: 5;
+
+    var story = document.getElementById('story');
+    var features = document.createElement('div');
+    features.setAttribute('id', 'features');
+
+    var header = document.createElement('div');
+
+    if (config.title) {
+        var titleText = document.createElement('h1');
+        titleText.innerText = config.title;
+        header.appendChild(titleText);
     }
-    .step {
-      padding: 150px 50px;
-      background: #fff;
-      opacity: 0.9;
+
+    if (config.subtitle) {
+        var subtitleText = document.createElement('h2');
+        subtitleText.innerText = config.subtitle;
+        header.appendChild(subtitleText);
     }
-    .step h3 {
-      margin-top: 0;
-    }
-    .step img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
 
-<body>
-  <div id="map"></div>
-  <div id="story"></div>
-
-  <script src="./config.js"></script>
-  <script>
-    mapboxgl.accessToken = config.accessToken;
-    const map = new mapboxgl.Map({
-      container: 'map',
-      style: config.style,
-      center: config.chapters[0].location.center,
-      zoom: config.chapters[0].location.zoom,
-      pitch: config.chapters[0].location.pitch,
-      bearing: config.chapters[0].location.bearing,
-      interactive: false
-    });
-
-    const story = document.getElementById('story');
-
-    config.chapters.forEach((chapter, idx) => {
-      const step = document.createElement('div');
-      step.className = 'step';
-      step.id = chapter.id;
-
-      const title = document.createElement('h3');
-      title.innerText = chapter.title;
-      step.appendChild(title);
-
-      if (chapter.image) {
-        const img = document.createElement('img');
-        img.src = chapter.image;
-        step.appendChild(img);
-      }
-
-      const desc = document.createElement('p');
-      desc.innerHTML = chapter.description;
-      step.appendChild(desc);
-
-      story.appendChild(step);
-    });
-
-    const scroller = scrollama();
-    scroller
-      .setup({
-        step: '.step',
-        offset: 0.5,
-        progress: true
-      })
-      .onStepEnter(response => {
-        const chapter = config.chapters.find(chap => chap.id === response.element.id);
-        map.flyTo(chapter.location);
-      });
-  </script>
-</body>
-</html>
+    if (config.byline) {
+        var bylineText = document.createElement('p');
+        bylineText.innerText = config.byline;
+        header.appendChild(bylineText);

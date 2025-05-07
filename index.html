@@ -1,28 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <meta charset='utf-8' />
   <title>Agency Mapped</title>
-  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <link rel="icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg" />
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
-  <script src="https://unpkg.com/scrollama"></script>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/mapbox-gl-globe-minimap@1.2.0/dist/bundle.js"></script>
-  <link href="https://unpkg.com/mapbox-storytelling@latest/storytelling.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollama"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    #map {
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+    }
+    #story {
+      position: relative;
+      z-index: 5;
+    }
+    .step {
+      padding: 150px 50px;
+      background: #fff;
+      opacity: 0.9;
+    }
+    .step h3 {
+      margin-top: 0;
+    }
+    .step img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Map container -->
   <div id="map"></div>
-  <!-- Sidebar for story chapters -->
-  <div id="legend" class="map-overlay legend light"></div>
   <div id="story"></div>
 
-  <!-- Load your custom config -->
   <script src="./config.js"></script>
+  <script>
+    mapboxgl.accessToken = config.accessToken;
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: config.style,
+      center: config.chapters[0].location.center,
+      zoom: config.chapters[0].location.zoom,
+      pitch: config.chapters[0].location.pitch,
+      bearing: config.chapters[0].location.bearing,
+      interactive: false
+    });
 
-  <!-- Load Mapbox storytelling rendering script -->
-  <script src="https://unpkg.com/mapbox-storytelling@latest/storytelling.js"></script>
+    const story = document.getElementById('story');
+
+    config.chapters.forEach((chapter, idx) => {
+      const step = document.createElement('div');
+      step.className = 'step';
+      step.id = chapter.id;
+
+      const title = document.createElement('h3');
+      title.innerText = chapter.title;
+      step.appendChild(title);
+
+      if (chapter.image) {
+        const img = document.createElement('img');
+        img.src = chapter.image;
+        step.appendChild(img);
+      }
+
+      const desc = document.createElement('p');
+      desc.innerHTML = chapter.description;
+      step.appendChild(desc);
+
+      story.appendChild(step);
+    });
+
+    const scroller = scrollama();
+    scroller
+      .setup({
+        step: '.step',
+        offset: 0.5,
+        progress: true
+      })
+      .onStepEnter(response => {
+        const chapter = config.chapters.find(chap => chap.id === response.element.id);
+        map.flyTo(chapter.location);
+      });
+  </script>
 </body>
 </html>

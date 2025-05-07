@@ -1,19 +1,15 @@
 var config = {
-    style: 'mmapbox://styles/siegmuhr/cmadchomj001u01s8a8itf84y',
-    // leave commented to use Mapbox Standard Style
+    style: 'mapbox://styles/siegmuhr/cmadchomj001u01s8a8itf84y',
     accessToken: 'pk.eyJ1IjoiYnpk.eyJ1Ijoic2llZ211aHIiLCJhIjoiY205N2tlNXZkMDg2NTJqc2ljbXFxejR0YSJ9.Nun4g2taiSsESfEZq47wigVyZ2VyamgiLCJhIjoiY20yc3IyZXozMDBqdTJ2b3BpY3M3aWNqcCJ9.BRJ_B6H5_MYZ7Q_PBxcaQg',
     showMarkers: false,
     markerColor: '#3FB1CE',
-    //projection: 'equirectangular',
-    //Read more about available projections here
-    //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     inset: true,
     insetOptions: {
         markerColor: 'blue'
     },
     insetPosition: 'bottom-right',
     theme: 'light',
-    use3dTerrain: false, //set true for enabling 3D maps.
+    use3dTerrain: false,
     auto: false,
     title: 'Agency Mapped: Southern Women in Literature',
     subtitle: 'Spatial Journeys across the South',
@@ -21,8 +17,7 @@ var config = {
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
-
-            id: 'opening',
+            id: 'chapter-colorpurple-opening',
             alignment: 'centered',
             hidden: false,
             title: 'The Color Purple',
@@ -37,19 +32,8 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
             id: 'chapter-one',
@@ -62,13 +46,7 @@ var config = {
                 center: [-83.5573651, 32.5573651], 
                 zoom: 6.5,
                 pitch: 60,
-                bearing: -43.2,
-                // flyTo additional controls-
-                // These options control the flight curve, making it move
-                // slowly and zoom out almost completely before starting
-                // to pan.
-                //speed: 2, // make the flying slow
-                //curve: 1, // change the speed at which it zooms out
+                bearing: -43.2
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
@@ -77,10 +55,10 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'chapter-colorpurple',
+            id: 'chapter-colorpurple-cover',
             alignment: 'centered',
             hidden: false,
-            title: 'The Color Purple',
+            title: 'The Color Purple – Cover',
             image: './assets/color_purple_cover.jpg',
             description: 'This is where I insert a description of the novel',
             location: {
@@ -92,21 +70,9 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
-
         {
             id: 'chapter-two',
             alignment: 'left',
@@ -128,7 +94,7 @@ var config = {
         },
         {
             id: 'chapter-three',
-            alignment: 'fully',
+            alignment: 'centered',
             hidden: false,
             title: 'End',
             image: './assets/color_purple_field.jpg',

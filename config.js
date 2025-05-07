@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/burgerjh/cmmapbox://styles/siegmuhr/cmadchomj001u01s8a8itf84y',
+    style: 'mmapbox://styles/siegmuhr/cmadchomj001u01s8a8itf84y',
     // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiYnpk.eyJ1Ijoic2llZ211aHIiLCJhIjoiY205N2tlNXZkMDg2NTJqc2ljbXFxejR0YSJ9.Nun4g2taiSsESfEZq47wigVyZ2VyamgiLCJhIjoiY20yc3IyZXozMDBqdTJ2b3BpY3M3aWNqcCJ9.BRJ_B6H5_MYZ7Q_PBxcaQg',
     showMarkers: false,

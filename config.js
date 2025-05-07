@@ -44,12 +44,12 @@ var config = {
             description: 'Description of the second location.',
             location: {
                 center: [-81.3831, 28.6142], 
-                zoom: 6.5,
-                pitch: 60,
-                bearing: -43.2
+                zoom: 10,
+                pitch: 75,
+                bearing: -45.2
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []

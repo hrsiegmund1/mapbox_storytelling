@@ -77,7 +77,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'opening',
+            id: 'chapter-colorpurple',
             alignment: 'centered',
             hidden: false,
             title: 'The Color Purple',

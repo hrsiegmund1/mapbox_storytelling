@@ -164,7 +164,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
         },
      {
             id: 'chapter-three',
-            alignment: 'centered',
+            alignment: 'right',
             hidden: false,
             title: 'Their Eyes Were Watching God: The Muck with Tea Cake',
             image: 'The Everglades.jpeg',  // Make sure to upload the appropriate image for this chapter

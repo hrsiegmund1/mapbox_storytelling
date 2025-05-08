@@ -190,7 +190,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     description: "Jesmyn Ward’s Salvage the Bones introduces Esche, a young girl growing up in the South in the days leading up to Hurricane Katrina. Esche has a journey to self empowerment and displays women's agency",
     location: {
         center: [-89.26344602946764, 30.37877669386771],  // Coordinates for the rural Mississippi setting (the novel's setting)
-        zoom: 6.5,
+        zoom: 12,
         pitch: 0,
         bearing: 0
     },

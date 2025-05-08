@@ -208,7 +208,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     image: 'Salvage the Bones.jpg',  // Image for the cow wormer theft scene
     description: "Skeetah recruits Esche to steal a cow wormer from a white family’s farm. Though initially seen as an act of necessity, this moment highlights Esche’s emerging agency, because she had the choice to help her brother commit a transaction of theft or to stay out of it, especially considering she is pregnant. As she participates in this act of theft, Esche not only contributes to the survival of her family and pit bull but also begins to see herself as capable of making her own decisions, even when they defy societal norms. This act of defiance marks the beginning of Esche’s journey toward empowerment.",
     location: {
-        center: [-81.38478, 25.85764],  // Coordinates near the white people's farm or a symbolic location
+        center: [-89.26908066564593, 30.40185596106536],  // Coordinates near the white people's farm or a symbolic location
         zoom: 6.5,
         pitch: 0,
         bearing: 0

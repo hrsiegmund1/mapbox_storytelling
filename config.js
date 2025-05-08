@@ -107,6 +107,25 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             onChapterExit: []
         },
         {
+            id: 'tewwg-title',  // New introductory chapter for *Their Eyes Were Watching God*
+            alignment: 'centered',
+            hidden: false,
+            title: 'Their Eyes Were Watching God',
+            image: 'assets/TEWWG_Novel_Cover.jpg',  // Same image as the book cover
+            description: 'Zora Neale Hurston’s *Their Eyes Were Watching God* tells the story of Janie Crawford, a woman seeking independence and self-realization in the face of societal constraints. This chapter marks the beginning of Janie’s journey toward reclaiming her voice and asserting her agency.',
+            location: {
+                center: [-81.4359, 28.6153],  // Coordinates for Eatonville, FL
+                zoom: 12,
+                pitch: 30,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: 'chapter-three',
             alignment: 'fully',
             hidden: false,

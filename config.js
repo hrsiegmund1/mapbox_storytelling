@@ -73,7 +73,7 @@ var config = {
     alignment: 'centered',
     hidden: false,
     title: 'Liberation with Shug',
-    image: './assets/shug.jpg',
+    image: 'assets/Shug and celie image.jpeg',
 description: "Shug Avery’s arrival disrupts the household's dynamic and opens Celie to new visions of identity, autonomy, and love. Shug encourages Celie to see herself as more than a victim, and this contributes to Celie's journey of independence later in the novel. Their move to Memphis represents a break from the past, and the home they share becomes a space of healing and transformation. Shug encourages Celie to pursue her pants-making business. Celie begins to sell pants that she makes herself. This furthers the notion of Celie's agency as a Black woman in the novel. \"I sit in the dining room making pants after pants. I got pants now in every color and size under the sun.\" (Walker, Letter 76)",
     location: {
         center: [-90.0519, 35.1486], // Shug and Celie's Memphis home

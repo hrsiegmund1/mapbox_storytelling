@@ -30,7 +30,7 @@ var config = {
             location: {
                 center: [-90.3150946, 38.6605671],
                 zoom: 4,
-                pitch: 60,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -59,7 +59,7 @@ var config = {
             location: {
                 center: [-83.5599840688572, 32.99976696381827], // Celie's home
                 zoom: 6.3,
-                pitch: 20,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',

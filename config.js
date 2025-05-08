@@ -313,7 +313,31 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     callback: '',
     onChapterEnter: [],
     onChapterExit: []
-}
+},
+{
+    id: 'limitations-of-data',
+    alignment: 'centered',
+    hidden: false,
+    title: 'Limitations of the Data',
+    description: `
+        As with any dataset, there are certain limitations to the information we have gathered throughout this project. 
+        These include potential biases in the sources, incomplete records, and gaps in the available data, such as 
+        missing geographic coordinates for some entries. Additionally, not every movement or transaction is recorded in 
+        a uniform manner, which can affect the accuracy of our analysis. Furthermore, the data's scope is limited to 
+        certain locations and may not fully capture the broader contexts or provide insights into the experiences of 
+        all the characters involved. These limitations must be acknowledged when interpreting the findings from this dataset.`,
+    location: {
+        center: [-90.3150946, 38.6605671], // Example coordinates for placement on map (no specific location needed)
+        zoom: 6.5,
+        pitch: 0,
+        bearing: 0
+    },
+    mapAnimation: 'flyTo',
+    rotateAnimation: false,
+    callback: '',
+    onChapterEnter: [],
+    onChapterExit: []
+},
 
 
 

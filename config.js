@@ -285,7 +285,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     title: 'Salvage the Bones: Esche Finding Eggs in the Pit',
     description: "As Esche looks for eggs the pit, she begins to assert agency over her pregnancy and body. She also parallels her own mother through the location being their home in the Pit and this transaction of finding eggs. \"Mama taught me how to find eggs in the pit, to give the birds their freedom even though they couldn’t see the sky.\" (Ward, Chapter 4)",  // Added quote here
     location: {
-        center: [-89.26806244331303, 89.26806244331303],  // Coordinates for Batiste Property
+        center: [-89.26344602946764, 30.37877669386771],  // Coordinates for Batiste Property
         zoom: 12,  // Updated zoom level
         pitch: 0,
         bearing: 0

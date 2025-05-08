@@ -146,7 +146,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
         },
         {
             id: 'tewwg-joe-starks-marriage',  // New chapter for Joe Starks' marriage to Janie
-            alignment: 'centered',
+            alignment: 'left',
             hidden: false,
             title: 'Their Eyes Were Watching God: Marriage to Joe Starks',
             description: "Janie’s marriage to Joe Starks represents the beginning of her struggle for agency. While Joe provides Janie with financial stability and the opportunity to live in Eatonville, he controls her every move, limiting her voice and her sense of self. As Joe expects Janie to fulfill the role of a silent, obedient wife, she begins to recognize that true empowerment comes from being able to express herself freely. This chapter marks a key moment in Janie's journey toward self-realization and independence. Joe attempts to silence Janie, saying, \"You ain’t got no business talkin’ to me like that. You ain’t got no business bein’ so independent. A woman is a mule to her husband.\" (Hurston, Chapter 5). Janie remaining in Eatonville through this marriage and not going elseway shows how her agency is different at the beginning of the novel.",

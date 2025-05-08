@@ -29,7 +29,7 @@ var config = {
             description: 'Explore Celie\'s journey of agency through movement and transaction in The Color Purple. The Color Purple is a story of oppression to empowerment and finding a voice. The novel is read through letters between Celie and God, and Celie and her sister Nettie.',
             location: {
                 center: [-90.3150946, 38.6605671],
-                zoom: 12,
+                zoom: 8,
                 pitch: 0,
                 bearing: 0
             },
@@ -77,7 +77,7 @@ var config = {
 description: "Shug Avery’s arrival disrupts the household's dynamic and opens Celie to new visions of identity, autonomy, and love. Shug encourages Celie to see herself as more than a victim, and this contributes to Celie's journey of independence later in the novel. Their move to Memphis represents a break from the past, and the home they share becomes a space of healing and transformation. Shug encourages Celie to pursue her pants-making business. Celie begins to sell pants that she makes herself. This furthers the notion of Celie's agency as a Black woman in the novel. \"I sit in the dining room making pants after pants. I got pants now in every color and size under the sun.\" (Walker, Page 210)",
     location: {
         center: [-90.0519, 35.1486], // Shug and Celie's Memphis home
-        zoom: 12,
+        zoom: 8,
         pitch: 0,
         bearing: -10
     },
@@ -115,7 +115,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             description: 'Zora Neale Hurston’s *Their Eyes Were Watching God* tells the story of Janie Crawford, a woman seeking independence and self-realization in the face of societal constraints. This chapter marks the beginning of Janie’s journey toward reclaiming her voice and asserting her agency.',
             location: {
                 center: [-81.4359, 28.6153],  // Coordinates for Eatonville, FL
-                zoom: 12,
+                zoom: 8,
                 pitch: 0,
                 bearing: 0
             },
@@ -134,7 +134,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             description: 'The novel begins with Janie\'s return to Eatonville. This demonstrates her agency as a woman because as the community around her gossips about her, Janie takes control of the story and chooses to reclaim her voice. The novel is a portrayl of her self-discovery and female empowerment. She has control over her narrative through this movement.',
             location: {
     center: [-81.4359, 28.6153],  // Correct coordinates for Eatonville, FL
-    zoom: 7,
+    zoom: 12,
     pitch: 0,
     bearing: 0
 },
@@ -171,7 +171,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             description: "Janie and Tea Cake move to the Everglades, where they work in the muck. This chapter marks a significant shift in Janie's journey toward agency. In the muck, she experiences true freedom and pure love for the first time, a significant difference from Joe. Here, Janie finds happiness and self-expression. The muck is where Janie truly learns what it means to live on her own terms, contributing to her growing sense of empowerment and independence.",
             location: {
                 center: [-81.38478, 25.85764],  // Coordinates for the muck in the Everglades
-                zoom: 6.5,
+                zoom: 8,
                 pitch: 0,
                 bearing: 0
             },
@@ -209,7 +209,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     description: "Skeetah recruits Esche to steal a cow wormer from a white family’s farm. Though initially seen as an act of necessity, this moment highlights Esche’s emerging agency, because she had the choice to help her brother commit a transaction of theft or to stay out of it, especially considering she is pregnant. As she participates in this act of theft, Esche not only contributes to the survival of her family and pit bull but also begins to see herself as capable of making her own decisions, even when they defy societal norms. This act of defiance marks the beginning of Esche’s journey toward empowerment.",
     location: {
         center: [-89.26908066564593, 30.40185596106536],  // Coordinates near the white people's farm or a symbolic location
-        zoom: 6.5,
+        zoom: 8,
         pitch: 0,
         bearing: 0
     },
@@ -245,7 +245,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     description: "In this moment, Esche steals a pregnancy test from a store in St. Catherine. This act highlights Esche’s agency. In a world where women’s reproductive choices are often controlled or overlooked, Esche’s act of stealing the test in St. Catherine displays her search for control over her own body and her ability to make decisions for herself.",
     location: {
         center: [-89.0553816234266, 30.443067376446155],  // Coordinates near the store in St. Catherine
-        zoom: 12,
+        zoom: 8,
         pitch: 0,
         bearing: 0
     },

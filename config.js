@@ -163,7 +163,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             onChapterExit: []
         },
      {
-            id: 'chapter-three',
+            id: 'chapter-four',
             alignment: 'right',
             hidden: false,
             title: 'Their Eyes Were Watching God: The Muck with Tea Cake',

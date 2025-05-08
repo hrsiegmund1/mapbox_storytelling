@@ -26,7 +26,7 @@ var config = {
             hidden: false,
             title: 'The Color Purple',
             image: 'https://github.com/hrsiegmund1/mapbox_storytelling/blob/main/The%20Color%20Purple%20Cover%20Hannah.jpg?raw=true',
-            description: 'Explore Celie\'s journey of agency through movement and transaction in The Color Purple',
+            description: 'Explore Celie\'s journey of agency through movement and transaction in The Color Purple.',
             location: {
                 center: [-90.3150946, 38.6605671],
                 zoom: 4,

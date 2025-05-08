@@ -227,7 +227,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     image: 'assets/SalvageTheBones-EggsInPit.jpg',  // Make sure the image is in the assets folder
     description: "As Esche looks for eggs the pit, she begins to assert agency over her pregnancy and body. She also parallels her own mother through the location being their home in the Pit and this transaction of finding eggs. \"Mama taught me how to find eggs in the pit, to give the birds their freedom even though they couldn’t see the sky.\" (Ward, Chapter 4)",  // Added quote here
     location: {
-        center: [-89.26908066564593, 30.40185596106536],  // Coordinates for Batiste Property
+        center: [-89.26806244331303, 400637931513852],  // Coordinates for Batiste Property
         zoom: 12,  // Updated zoom level
         pitch: 0,
         bearing: 0

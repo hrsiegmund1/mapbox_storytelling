@@ -115,7 +115,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             description: 'The novel begins with Janie\'s return to Eatonville. This demonstrates her agency as a woman because as the community around her gossips about her, Janie takes control of the story and chooses to reclaim her voice. The novel is a portrayl of her self-discovery and female empowerment. She has control over her narrative through this movement.',
             location: {
     center: [-81.4359, 28.6153],  // Correct coordinates for Eatonville, FL
-    zoom: 3,
+    zoom: 12,
     pitch: 30,
     bearing: 0
 },

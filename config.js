@@ -242,7 +242,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     alignment: 'left',
     hidden: false,
     title: 'Salvage the Bones: Pregnancy Test Theft',
-    description: "In this moment, Esche steals a pregnancy test from a store in St. Catherine. While initially an act of defiance, this act highlights Esche’s agency as a woman. In a world where women’s reproductive choices are often controlled or overlooked, Esche’s act of taking the test symbolizes her search for control over her own body and her ability to make decisions for herself.",
+    description: "In this moment, Esche steals a pregnancy test from a store in St. Catherine. This act highlights Esche’s agency. In a world where women’s reproductive choices are often controlled or overlooked, Esche’s act of stealing the test in St. Catherine displays her search for control over her own body and her ability to make decisions for herself.",
     location: {
         center: [-89.0553816234266, 30.443067376446155],  // Coordinates near the store in St. Catherine
         zoom: 6.5,

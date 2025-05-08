@@ -124,6 +124,25 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
+        },
+        {
+            id: 'tewwg-joe-starks-marriage',  // New chapter for Joe Starks' marriage to Janie
+            alignment: 'centered',
+            hidden: false,
+            title: 'Marriage to Joe Starks',
+            image: 'assets/joe_starks_image.jpg',  // Ensure image path is correct
+            description: "Janie’s marriage to Joe Starks represents the beginning of her struggle for agency. While Joe provides Janie with financial stability and the opportunity to live in Eatonville, he controls her every move, limiting her voice and her sense of self. As Joe expects Janie to fulfill the role of a silent, obedient wife, she begins to recognize that true empowerment comes from being able to express herself freely. This chapter marks a key moment in Janie's journey toward self-realization and independence.",
+            location: {
+                center: [-81.38643808791495, 28.618579170446417],  // Coordinates for Eatonville, FL
+                zoom: 12,
+                pitch: 30,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
         }
     ]
 };

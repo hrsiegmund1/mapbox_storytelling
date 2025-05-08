@@ -68,14 +68,6 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        
-            mapAnimation: 'flyTo',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        
         {
             id: 'opening',
             alignment: 'centered',

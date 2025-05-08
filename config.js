@@ -68,36 +68,25 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        {
-            id: 'opening',
-            alignment: 'centered',
-            hidden: false,
-            title: 'The Color Purple',
-            image: './assets/color_purple_cover.jpg',
-            description: 'This is where I insert a description of the novel',
-            location: {
-                center: [-90.3150946, 38.6605671],
-                zoom: 4,
-                pitch: 60,
-                bearing: 0
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
+{
+    id: 'color-purple-shug',
+    alignment: 'centered',
+    hidden: false,
+    title: 'Liberation with Shug',
+    image: './assets/shug.jpg',
+    description: "Shug Avery’s arrival disrupts the household's dynamic and opens Celie to new visions of identity, autonomy, and love. Shug encourages Celie to see herself as more than a victim, planting the seeds for Celie’s emotional and economic independence. Their move to Memphis represents a break from the past, and the home they share becomes a space of healing and transformation.",
+    location: {
+        center: [-90.0519, 35.1486], // Shug and Celie's Memphis home
+        zoom: 7,
+        pitch: 30,
+        bearing: -10
+    },
+    mapAnimation: 'flyTo',
+    rotateAnimation: false,
+    callback: '',
+    onChapterEnter: [],
+    onChapterExit: []
+},
 
         {
             id: 'chapter-two',

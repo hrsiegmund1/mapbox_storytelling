@@ -55,7 +55,6 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: "The Color Purple: Celie's Constraints",
-            image: './assets/celie.jpg',
             description: "Celie begins her journey in rural Georgia, facing cycles of abuse and poverty tied to inherited land and social roles.",
             location: {
                 center: [-83.5599840688572, 32.99976696381827], // Celie's home
@@ -63,6 +62,13 @@ var config = {
                 pitch: 20,
                 bearing: 0
             },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback: '',

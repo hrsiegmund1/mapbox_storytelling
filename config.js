@@ -127,7 +127,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
         },
         {
             id: 'chapter-three',
-            alignment: 'fully',
+            alignment: 'right',
             hidden: false,
             title: 'Their Eyes Were Watching God',
             image: 'assets/TEWWG Novel Coveer.jpg',

@@ -92,7 +92,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             id: 'chapter-two',
             alignment: 'left',
             hidden: false,
-            title: 'Olinka',
+            title: 'Nettie\'s Time with the Olinka in Africa',
             image: './assets/firestone_farm.jpg',
             description: 'Description of the Olinka people',
             location: {

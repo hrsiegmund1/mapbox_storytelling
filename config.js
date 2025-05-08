@@ -72,7 +72,7 @@ var config = {
     id: 'color-purple-shug',
     alignment: 'centered',
     hidden: false,
-    title: 'Liberation with Shug',
+    title: 'The Color Purple: Liberation with Shug',
     image: 'assets/Shug and celie image.jpeg',
 description: "Shug Avery’s arrival disrupts the household's dynamic and opens Celie to new visions of identity, autonomy, and love. Shug encourages Celie to see herself as more than a victim, and this contributes to Celie's journey of independence later in the novel. Their move to Memphis represents a break from the past, and the home they share becomes a space of healing and transformation. Shug encourages Celie to pursue her pants-making business. Celie begins to sell pants that she makes herself. This furthers the notion of Celie's agency as a Black woman in the novel. \"I sit in the dining room making pants after pants. I got pants now in every color and size under the sun.\" (Walker, Page 210)",
     location: {
@@ -92,7 +92,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             id: 'chapter-two',
             alignment: 'left',
             hidden: false,
-            title: 'Nettie\'s Time with the Olinka in Africa',
+            title: 'The Color Purple: Nettie\'s Time with the Olinka in Africa',
             description: 'Nettie\'s time in Africa with the Olinka people as a missionary highlights movement directly relating to women\'s agencry in the novel. This also directly relates to the shared struggles of women across cultures. Nettie witnesses how young girls are limited due to their gender. Tashi is originally resistant to cultural practices and this mirrors Nettie\'s awareness of female agency, as she write in her letters to Celie. \"Why can\'t Tashi come to school? she asked me. When I told her the Olinka don\'t believe in educating girls she said wuick as a flash, They are like white people at home who do not want colored people to learn.\" (Walker, Page 155) ',
             location: {
                 center: [-10.378889436404226, 6.251275915595865], 
@@ -129,7 +129,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             id: 'tewwg-joe-starks-marriage',  // New chapter for Joe Starks' marriage to Janie
             alignment: 'centered',
             hidden: false,
-            title: 'Marriage to Joe Starks',
+            title: 'Their Eyes Were Watching God: Marriage to Joe Starks',
             description: "Janie’s marriage to Joe Starks represents the beginning of her struggle for agency. While Joe provides Janie with financial stability and the opportunity to live in Eatonville, he controls her every move, limiting her voice and her sense of self. As Joe expects Janie to fulfill the role of a silent, obedient wife, she begins to recognize that true empowerment comes from being able to express herself freely. This chapter marks a key moment in Janie's journey toward self-realization and independence. Joe attempts to silence Janie, saying, \"You ain’t got no business talkin’ to me like that. You ain’t got no business bein’ so independent. A woman is a mule to her husband.\" (Hurston, Chapter 5). Janie remaining in Eatonville thorugh this marriage shows how her agency is different at the beginning of the novel.",
             location: {
                 center: [-81.38643808791495, 28.618579170446417],  // Coordinates for Eatonville, FL

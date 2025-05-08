@@ -55,7 +55,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: "The Color Purple: Celie's Constraints",
-            description: "Celie begins her journey in rural Georgia, facing cycles of abuse and poverty tied to inherited land and social roles.",
+            description: "Celie begins her journey in rural Georgia, facing cycles of abuse and poverty tied to inherited land and social roles. Celie's home holds a lot of meaning in the story. She is under the control of Alhponso at the start and does not know life other than her home. She endures abuse over time and the land and house becomes tied to her sense of identity and self-worth. The realization that Alphonso is not her biological father and that Celie inherited the home reveal that the home was never truly under his control. This location is integral to Celie in reclaiming her voice.",
             location: {
                 center: [-83.5599840688572, 32.99976696381827], // Celie's home
                 zoom: 6.3,

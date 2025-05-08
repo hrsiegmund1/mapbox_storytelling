@@ -25,7 +25,7 @@ var config = {
             alignment: 'centered',
             hidden: false,
             title: 'The Color Purple',
-            image: './assets/Keezell_Hall.jpg',
+            image: 'https://github.com/hrsiegmund1/mapbox_storytelling/blob/main/The%20Color%20Purple%20Cover%20Hannah.jpg?raw=true',
             description: 'This is where I insert a description of the novel',
             location: {
                 center: [-90.3150946, 38.6605671],

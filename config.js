@@ -187,7 +187,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     hidden: false,
     title: 'Salvage the Bones: Introduction',
     image: 'assets/salvage_the_bones_cover.jpg',  // Make sure the image is in the assets folder
-    description: "Jesmyn Ward’s *Salvage the Bones* introduces Esche, a young girl growing up in the rural South in the days leading up to **Hurricane Katrina**. Esche is forced to grow up fast, learning to navigate the complexities of family, poverty, and gender expectations. Despite these challenges, she begins to assert her independence, finding strength in her own resilience. This introduction sets the stage for her journey toward survival, self-awareness, and empowerment.",
+    description: "Jesmyn Ward’s Salvage the Bones introduces Esche, a young girl growing up in the South in the days leading up to Hurricane Katrina. Esche has a journey to self empowerment and displays women's agency",
     location: {
         center: [-89.26344602946764, 30.37877669386771],  // Coordinates for the rural Mississippi setting (the novel's setting)
         zoom: 6.5,

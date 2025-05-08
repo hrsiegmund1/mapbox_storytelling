@@ -51,23 +51,17 @@ var config = {
             ]
         },
         {
-            id: 'chapter-one',
+            id: 'color-purple-start',
             alignment: 'right',
             hidden: false,
-            title: 'Someplace Georgia',
-            image: './assets/alice_walker_childhood_home.jpg',
-            description: 'Description of the second location.',
+            title: "The Color Purple: Celie's Constraints",
+            image: './assets/celie.jpg',
+            description: "Celie begins her journey in rural Georgia, facing cycles of abuse and poverty tied to inherited land and social roles.",
             location: {
-                center: [-83.5573651, 32.5573651], 
-                zoom: 6.5,
-                pitch: 60,
-                bearing: -43.2,
-                // flyTo additional controls-
-                // These options control the flight curve, making it move
-                // slowly and zoom out almost completely before starting
-                // to pan.
-                //speed: 2, // make the flying slow
-                //curve: 1, // change the speed at which it zooms out
+                center: [-83.5599840688572, 32.99976696381827], // Celie's home
+                zoom: 6.3,
+                pitch: 20,
+                bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
@@ -75,6 +69,7 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
+        
         {
             id: 'opening',
             alignment: 'centered',

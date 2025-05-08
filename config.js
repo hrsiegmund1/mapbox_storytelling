@@ -129,7 +129,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             id: 'chapter-three',
             alignment: 'right',
             hidden: false,
-            title: 'Their Eyes Were Watching God',
+            title: 'Their Eyes Were Watching God: Beginning of Janie\'s agency.',
             image: 'assets/TEWWG Novel Coveer.jpg',
             description: 'The novel begins with Janie\'s return to Eatonville. This demonstrates her agency as a woman because as the community around her gossips about her, Janie takes control of the story and chooses to reclaim her voice. The novel is a portrayl of her self-discovery and female empowerment. She has control over her narrative through this movement.',
             location: {

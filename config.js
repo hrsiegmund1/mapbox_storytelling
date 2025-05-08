@@ -171,8 +171,8 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             description: "Janie and Tea Cake move to the Everglades, where they work in the muck. This chapter marks a significant shift in Janie's journey toward agency. In the muck, she experiences true freedom and pure love for the first time, a significant difference from Joe. Here, Janie finds happiness and self-expression. The muck is where Janie truly learns what it means to live on her own terms, contributing to her growing sense of empowerment and independence.",
             location: {
                 center: [-81.38478, 25.85764],  // Coordinates for the muck in the Everglades
-                zoom: 10,
-                pitch: 30,
+                zoom: 6.5,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',

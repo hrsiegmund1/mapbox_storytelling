@@ -21,6 +21,65 @@ var config = {
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
+            id: 'image-section-top', // New section for images
+            alignment: 'centered',
+            hidden: false,
+            title: 'Image Section Above First Chapter',
+            image: 'assets/image1.jpg',  // Replace with actual image paths
+            description: 'A section displaying images related to the themes of the story.',
+            location: {
+                center: [-90.3150946, 38.6605671],
+                zoom: 6.5,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        // Image 2
+        {
+            id: 'image-2',
+            alignment: 'centered',
+            hidden: false,
+            title: 'Image 2 Title',
+            image: 'assets/image2.jpg',  // Replace with actual image path
+            description: 'Description of image 2.',
+            location: {
+                center: [-90.3150946, 38.6605671],
+                zoom: 6.5,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        // Image 3
+        {
+            id: 'image-3',
+            alignment: 'centered',
+            hidden: false,
+            title: 'Image 3 Title',
+            image: 'assets/image3.jpg',  // Replace with actual image path
+            description: 'Description of image 3.',
+            location: {
+                center: [-90.3150946, 38.6605671],
+                zoom: 6.5,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: 'opening',
             alignment: 'centered',
             hidden: false,

@@ -202,7 +202,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
 },
 {
     id: 'salvage-bones-cow-wormer-theft',
-    alignment: 'left',
+    alignment: 'right',
     hidden: false,
     title: 'Salvage the Bones: Stealing the Cow Wormer',
     image: 'Salvage the Bones.jpg',  // Image for the cow wormer theft scene

@@ -29,7 +29,7 @@ var config = {
             image: 'https://github.com/hrsiegmund1/mapbox_storytelling/blob/main/The%20Color%20Purple%20Cover%20Hannah.jpg?raw=true',
             description: 'Explore Celie\'s journey of agency through movement and transaction in The Color Purple. The Color Purple is a story of oppression to empowerment and finding a voice. The novel is read through letters between Celie and God, and Celie and her sister Nettie.',
             location: {
-                center: [-90.3150946, 38.6605671],
+                center: [-83.5599840688572, 32.99976696381827],
                 zoom: 8,
                 pitch: 0,
                 bearing: 0

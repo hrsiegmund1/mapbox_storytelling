@@ -132,7 +132,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
             hidden: false,
             title: 'Their Eyes Were Watching God: Beginning of Janie\'s agency',
             image: 'assets/TEWWG Novel Coveer.jpg',
-            description: 'The novel begins with Janie\'s return to Eatonville. This demonstrates her agency as a woman because as the community around her gossips about her, Janie takes control of the story and chooses to reclaim her voice. The novel is a portrayl of her self-discovery and female empowerment. She has control over her narrative through this movement.',
+            description: 'The novel begins with Janie\'s return to Eatonville. This demonstrates her agency as a woman because as the community around her gossips about her, Janie takes control of the story and chooses to reclaim her voice. This movement of the novel beginning in Eatonville begins the journey of her self-discovery and female empowerment.',
             location: {
     center: [-81.4359, 28.6153],  // Correct coordinates for Eatonville, FL
     zoom: 12,

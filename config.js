@@ -300,8 +300,8 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     extraContent: `
         <div style="display: flex; justify-content: space-between;">
             <img src="Alice face pic.png" alt="Image 1" style="width: 30%; margin-right: 10px;" />
-            <img src="assets/second-image.jpg" alt="Image 2" style="width: 30%; margin-right: 10px;" />
-            <img src="assets/third-image.jpg" alt="Image 3" style="width: 30%;" />
+            <img src="Hurston book pic.webp" alt="Image 2" style="width: 30%; margin-right: 10px;" />
+            <img src="Jesmyn Ward pic.avif" alt="Image 3" style="width: 30%;" />
         </div>
     `
 }

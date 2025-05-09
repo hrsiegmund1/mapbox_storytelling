@@ -279,6 +279,33 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     onChapterEnter: [],
     onChapterExit: []
 },
+{
+    id: 'power-of-the-data',
+    alignment: 'centered',
+    hidden: false,
+    title: 'The Power of the Data: Black Women’s Agency in the South',
+    image: 'assets/power-of-the-data-image.jpg',  // Main image for the chapter (optional)
+    description: 'Add text here',  // Add the content of the chapter here
+    location: {
+        center: [-81.4359, 28.6153],  // Coordinates for an appropriate Southern location
+        zoom: 6.5,
+        pitch: 0,
+        bearing: 0
+    },
+    mapAnimation: 'flyTo',
+    rotateAnimation: false,
+    callback: '',
+    onChapterEnter: [],
+    onChapterExit: [],
+    extraContent: `
+        <div style="display: flex; justify-content: space-between;">
+            <img src="assets/first-image.jpg" alt="Image 1" style="width: 30%; margin-right: 10px;" />
+            <img src="assets/second-image.jpg" alt="Image 2" style="width: 30%; margin-right: 10px;" />
+            <img src="assets/third-image.jpg" alt="Image 3" style="width: 30%;" />
+        </div>
+    `
+}
+
 
 
 

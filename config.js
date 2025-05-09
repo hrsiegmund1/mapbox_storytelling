@@ -285,7 +285,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     hidden: false,
     title: 'The Power of the Data: Black Women’s Agency in the South',
     image: 'assets/power-of-the-data-image.jpg',  // Main image for the chapter (optional)
-    description: 'Add text here',  // Add the content of the chapter here
+    description: 'The data that we have gathered as a class throughout this semester offers new insights into the powerful yet often overlooked narratives of Black women asserting agency in the South. By studying economic transactions and movements through a spatial map, we uncover the ways in which these women navigate oppressive structures and reclaim their narrative. In The Color Purple, Their Eyes Were Watching God, and Salvage the Bones, the data reveals ho these women open space for self-expression and autonomy. The decisions they make tell a story of resilience, transformation, independence, and growth. This data approach shows how race, gender, and class in the South intersect. The data visually captures moments of Black women’s resilience and agency, making it an undeniable part of Southern history and culture.',
     location: {
         center: [-81.4359, 28.6153],  // Coordinates for an appropriate Southern location
         zoom: 6.5,

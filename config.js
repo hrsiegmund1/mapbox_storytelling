@@ -284,8 +284,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     alignment: 'centered',
     hidden: false,
     title: 'The Power of the Data: Black Women’s Agency in the South',
-    image: 'assets/power-of-the-data-image.jpg',  // Main image for the chapter (optional)
-    description: 'The data that we have gathered as a class throughout this semester offers new insights into the powerful yet often overlooked narratives of Black women asserting agency in the South. By studying economic transactions and movements through a spatial map, we uncover the ways in which these women navigate oppressive structures and reclaim their narrative. In The Color Purple, Their Eyes Were Watching God, and Salvage the Bones, the data reveals ho these women open space for self-expression and autonomy. The decisions they make tell a story of resilience, transformation, independence, and growth. This data approach shows how race, gender, and class in the South intersect. The data visually captures moments of Black women’s resilience and agency, making it an undeniable part of Southern history and culture.',
+    description: 'The data that we have gathered as a class throughout this semester offers new insights into the powerful yet often overlooked narratives of Black women asserting agency in the South. By studying economic transactions and movements through a spatial map, we uncover the ways in which these women navigate oppressive structures and reclaim their narrative. In The Color Purple, Their Eyes Were Watching God, and Salvage the Bones, the data reveals how these women open space for self-expression and autonomy. The decisions they make tell a story of resilience, transformation, independence, and growth. This data approach shows how race, gender, and class in the South intersect. The data visually captures moments of Black women’s resilience and agency, making it an undeniable part of Southern history and culture.',
     location: {
         center: [-90.3150946, 38.6605671],  // Coordinates for an appropriate Southern location
         zoom: 6.5,
@@ -299,12 +298,13 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     onChapterExit: [],
     extraContent: `
         <div style="display: flex; justify-content: space-between;">
-            <img src="Alice face pic.png" alt="Image 1" style="width: 30%; margin-right: 10px;" />
-            <img src="Hurston book pic.webp" alt="Image 2" style="width: 30%; margin-right: 10px;" />
-            <img src="Jesmyn Ward pic.avif" alt="Image 3" style="width: 30%;" />
+            <img src="Alice face pic.png" alt="Alice" style="width: 30%; margin-right: 10px;" />
+            <img src="Hurston book pic.webp" alt="Hurston's Book" style="width: 30%; margin-right: 10px;" />
+            <img src="Jesmyn Ward pic.avif" alt="Jesmyn Ward" style="width: 30%;" />
         </div>
     `
 }
+
 
 
 

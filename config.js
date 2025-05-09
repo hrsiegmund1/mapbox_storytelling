@@ -296,13 +296,6 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     callback: '',
     onChapterEnter: [],
     onChapterExit: [],
-    extraContent: `
-        <div style="display: flex; justify-content: space-between;">
-            <img src="Alice face pic.png" alt="Alice" style="width: 30%; margin-right: 10px;" />
-            <img src="Hurston book pic.webp" alt="Hurston's Book" style="width: 30%; margin-right: 10px;" />
-            <img src="Jesmyn Ward pic.avif" alt="Jesmyn Ward" style="width: 30%;" />
-        </div>
-    `
 }
 
 

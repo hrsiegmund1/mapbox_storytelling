@@ -299,7 +299,7 @@ description: "Shug Avery’s arrival disrupts the household's dynamic and opens 
     onChapterExit: [],
     extraContent: `
         <div style="display: flex; justify-content: space-between;">
-            <img src="assets/first-image.jpg" alt="Image 1" style="width: 30%; margin-right: 10px;" />
+            <img src="Alice face pic.png" alt="Image 1" style="width: 30%; margin-right: 10px;" />
             <img src="assets/second-image.jpg" alt="Image 2" style="width: 30%; margin-right: 10px;" />
             <img src="assets/third-image.jpg" alt="Image 3" style="width: 30%;" />
         </div>
